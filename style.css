@@ -113,7 +113,7 @@ footer {
     z-index: 0;
 }
 
-/* GEAR SIZE — tuned for your 6‑tooth gear */
+/* GEAR SIZE */
 .gear {
     position: absolute;
     width: 160px;
@@ -123,8 +123,6 @@ footer {
 .gear2 {
     width: 220px;
     height: 220px;
-    bottom: -12%;
-    right: -12%;
 }
 
 /* SVG styling */
@@ -132,14 +130,11 @@ footer {
     width: 100%;
     height: 100%;
     fill: white;
-    opacity: 0.18; /* softer, cleaner */
-}
-
-/* ROTATION */
-.gear svg {
+    opacity: 0.18;
     transform-origin: 50% 50%;
 }
 
+/* ROTATION */
 .gear1 svg {
     animation: rotateSlow 40s linear infinite;
 }
@@ -158,8 +153,13 @@ footer {
     to { transform: rotate(-360deg); }
 }
 
-/* LEFT GEAR POSITION */
+/* FINAL POSITIONS */
 .gear1 {
-    top: 18%;
-    left: -6%;
+    top: 20%;
+    left: 20%;   /* moved RIGHT */
+}
+
+.gear2 {
+    bottom: -5%;
+    right: 20%;  /* moved LEFT */
 }
