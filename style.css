@@ -32,14 +32,15 @@ nav a {
     font-size: 16px;
 }
 
+/* HERO SECTION */
 .hero {
     position: relative;
     overflow: hidden;
     text-align: center;
     padding: 120px 20px;
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    z-index: 1;
 }
-
 
 .hero h2 {
     font-size: 42px;
@@ -50,20 +51,6 @@ nav a {
     font-size: 20px;
     margin-bottom: 30px;
     color: #cccccc;
-}
-.hero {
-    position: relative;
-    z-index: 1;
-}
-
-.gears {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
 }
 
 .hero h2,
@@ -89,14 +76,6 @@ nav a {
     line-height: 1.6;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    border-top: 1px solid #222;
-    color: #777;
-}
 /* CONTACT SECTION */
 .contact {
     max-width: 900px;
@@ -112,6 +91,16 @@ footer {
     color: #00aaff;
     font-weight: bold;
 }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #222;
+    color: #777;
+}
+
 /* BACKGROUND GEARS */
 .gears {
     position: absolute;
@@ -121,50 +110,43 @@ footer {
     height: 100%;
     overflow: hidden;
     pointer-events: none;
+    z-index: 0;
 }
 
 .gear {
     position: absolute;
-    width: 260px;
-    height: 260px;
-}
-
-.gear svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    fill: white;
-    opacity: 0.28;
-}
-
-
-.gear1 {
-    top: 20%;
-    left: -5%;
-    animation-duration: 30s;
+    width: 120px;   /* FIXED SIZE FOR 24x24 SVG */
+    height: 120px;
 }
 
 .gear2 {
-    bottom: -5%;
-    right: -5%;
-    width: 300px;
-    height: 300px;
-    animation-duration: 40s;
+    width: 150px;   /* Slightly bigger for right gear */
+    height: 150px;
+    bottom: -8%;
+    right: -8%;
 }
 
+/* SVG styling */
+.gear svg {
+    width: 100%;
+    height: 100%;
+    fill: white;
+    opacity: 0.22;
+}
+
+/* ROTATION FIX */
+.outer,
+.inner {
+    transform-origin: 50% 50%;   /* CRITICAL FIX */
+}
 
 .outer {
-    transform-origin: 50% 50%;
     animation: rotateOuter 40s linear infinite;
 }
 
 .inner {
-    transform-origin: 50% 50%;
     animation: rotateInner 12s linear infinite;
 }
-
 
 @keyframes rotateOuter {
     from { transform: rotate(0deg); }
@@ -176,4 +158,8 @@ footer {
     to { transform: rotate(-360deg); }
 }
 
-
+/* LEFT GEAR POSITION */
+.gear1 {
+    top: 20%;
+    left: -5%;
+}
