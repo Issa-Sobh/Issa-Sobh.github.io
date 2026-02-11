@@ -89,3 +89,42 @@ footer {
     color: #00aaff;
     font-weight: bold;
 }
+/* BACKGROUND GEARS */
+.gears {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.gear {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="none" stroke="%23ffffff" stroke-width="4" opacity="0.05" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 30a20 20 0 1 0 0 40a20 20 0 1 0 0-40zm0-20v10m0 60v10m-20-80l5 9m30 62l5 9m-45-45h-10m80 0h-10m-62-20l9 5m62 30l9 5"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: rotateGear 25s linear infinite;
+}
+
+.gear1 {
+    top: 20%;
+    left: -5%;
+    animation-duration: 30s;
+}
+
+.gear2 {
+    bottom: 10%;
+    right: -5%;
+    width: 260px;
+    height: 260px;
+    animation-duration: 40s;
+}
+
+@keyframes rotateGear {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
