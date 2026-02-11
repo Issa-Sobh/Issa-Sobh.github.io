@@ -24,15 +24,51 @@
 
     <!-- LEFT GEAR -->
     <div class="gear gear1">
-        <svg viewBox="0 0 24 24" fill="white">
-            <path d="M12 2c.5 0 .9.3 1 .8l.3 1.4c.4.1.7.3 1 .5l1.3-.5c.5-.2 1 .1 1.2.6l1 1.7c.3.4.2 1-.2 1.3l-1.1.9v1.1l1.1.9c.4.3.5.9.2 1.3l-1 1.7c-.3.5-.8.7-1.2.6l-1.3-.5c-.3.2-.6.4-1 .5l-.3 1.4c-.1.5-.5.8-1 .8h-2c-.5 0-.9-.3-1-.8l-.3-1.4c-.4-.1-.7-.3-1-.5l-1.3.5c-.5.2-1-.1-1.2-.6l-1-1.7c-.3-.4-.2-1 .2-1.3l1.1-.9v-1.1l-1.1-.9c-.4-.3-.5-.9-.2-1.3l1-1.7c.3-.5.8-.7 1.2-.6l1.3.5c.3-.2.6-.4 1-.5l.3-1.4c.1-.5.5-.8 1-.8h2zm0 6a4 4 0 110 8 4 4 0 010-8z"/>
+        <svg class="gear-svg" viewbox="0 0 100 100" aria-hidden="true">
+        <defs>
+            <mask id="gearHole1">
+            <rect width="100" height="100" fill="white" />
+            <circle cx="50" cy="50" r="14" fill="black" />
+            </mask>
+        </defs>
+
+        <g mask="url(#gearHole1)">
+            <!-- Gear body -->
+            <circle cx="50" cy="50" r="36" />
+
+            <!-- 6 Thick Teeth -->
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(0 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(60 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(120 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(180 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(240 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(300 50 50)" />
+        </g>
         </svg>
     </div>
 
     <!-- RIGHT GEAR -->
     <div class="gear gear2">
-        <svg viewBox="0 0 24 24" fill="white">
-            <path d="M12 2c.5 0 .9.3 1 .8l.3 1.4c.4.1.7.3 1 .5l1.3-.5c.5-.2 1 .1 1.2.6l1 1.7c.3.4.2 1-.2 1.3l-1.1.9v1.1l1.1.9c.4.3.5.9.2 1.3l-1 1.7c-.3.5-.8.7-1.2.6l-1.3-.5c-.3.2-.6.4-1 .5l-.3 1.4c-.1.5-.5.8-1 .8h-2c-.5 0-.9-.3-1-.8l-.3-1.4c-.4-.1-.7-.3-1-.5l-1.3.5c-.5.2-1-.1-1.2-.6l-1-1.7c-.3-.4-.2-1 .2-1.3l1.1-.9v-1.1l-1.1-.9c-.4-.3-.5-.9-.2-1.3l1-1.7c.3-.5.8-.7 1.2-.6l1.3.5c.3-.2.6-.4 1-.5l.3-1.4c.1-.5.5-.8 1-.8h2zm0 6a4 4 0 110 8 4 4 0 010-8z"/>
+       <svg class="gear-svg" viewbox="0 0 100 100" aria-hidden="true">
+        <defs>
+            <mask id="gearHole2">
+            <rect width="100" height="100" fill="white" />
+            <circle cx="50" cy="50" r="14" fill="black" />
+            </mask>
+        </defs>
+
+        <g mask="url(#gearHole2)">
+            <!-- Gear body -->
+            <circle cx="50" cy="50" r="36" />
+
+            <!-- 6 Thick Teeth -->
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(0 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(60 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(120 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(180 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(240 50 50)" />
+            <rect x="34" y="0" width="26" height="24" rx="4" transform="rotate(300 50 50)" />
+        </g>
         </svg>
     </div>
 
