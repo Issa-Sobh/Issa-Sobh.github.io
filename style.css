@@ -156,12 +156,15 @@ footer {
 
 
 .outer {
+    transform-origin: 50% 50%;
     animation: rotateOuter 40s linear infinite;
 }
 
 .inner {
+    transform-origin: 50% 50%;
     animation: rotateInner 12s linear infinite;
 }
+
 
 @keyframes rotateOuter {
     from { transform: rotate(0deg); }
