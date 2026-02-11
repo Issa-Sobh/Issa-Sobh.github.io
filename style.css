@@ -113,17 +113,18 @@ footer {
     z-index: 0;
 }
 
+/* GEAR SIZE — tuned for your 24×24 SVG */
 .gear {
     position: absolute;
-    width: 120px;   /* FIXED SIZE FOR 24x24 SVG */
-    height: 120px;
+    width: 140px;
+    height: 140px;
 }
 
 .gear2 {
-    width: 150px;   /* Slightly bigger for right gear */
-    height: 150px;
-    bottom: -8%;
-    right: -8%;
+    width: 180px;
+    height: 180px;
+    bottom: -10%;
+    right: -10%;
 }
 
 /* SVG styling */
@@ -137,7 +138,7 @@ footer {
 /* ROTATION FIX */
 .outer,
 .inner {
-    transform-origin: 50% 50%;   /* CRITICAL FIX */
+    transform-origin: 50% 50%;
 }
 
 .outer {
@@ -160,6 +161,6 @@ footer {
 
 /* LEFT GEAR POSITION */
 .gear1 {
-    top: 20%;
-    left: -5%;
+    top: 18%;
+    left: -6%;
 }
